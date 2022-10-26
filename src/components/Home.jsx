@@ -10,8 +10,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      //.get("https://rickandmortyapi.com/api/character")
-      .get("http://localhost:8000/characters")
+      .get("https://rickandmortyapi.com/api/character")
       .then((resultado) => {
         const datos = resultado.data.results;
         console.log(datos);
